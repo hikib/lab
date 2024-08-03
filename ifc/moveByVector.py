@@ -5,6 +5,7 @@ def info(obj):
     for k, v in obj.get_info().items():
         print(f"{k}\n\t{v}\n")
 
+
 def main():
     # TODO file as arg
     file = ifc.open("./rac_advanced_sample_project.ifc")

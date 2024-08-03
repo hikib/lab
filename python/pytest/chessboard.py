@@ -1,3 +1,6 @@
+#! /usr/bin/python3
+
+
 def getColor(c, r):
     if not 1 <= c <= 8 or not 1 <= r <= 8:
         return ""
@@ -6,8 +9,11 @@ def getColor(c, r):
     else:
         return "black"
 
+
 def test_getColor():
     assert getColor(2, 1) == "black"
     assert getColor(2, 2) == "white"
     assert getColor(2, 0) == ""
 
+
+test_getColor()

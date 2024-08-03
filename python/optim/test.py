@@ -30,12 +30,14 @@ def fuzzy_search_ratio(target_string, sfilter, regex=False):
         # 88 to 89 reserved (2 scores)
     }
     for r, s in ratios.items():
-        if not(eval(r)): continue
+        if not (eval(r)):
+            continue
         print(s)
         break
 
     lower_tstring_parts = [x.lower() for x in tstring_parts]
     lower_sfilter_parts = [x.lower() for x in sfilter_parts]
+    lower_sfilter_parts
     # exclude override
     if any(x[0] == '!' for x in sfilter_parts):
         exclude_indices = [
